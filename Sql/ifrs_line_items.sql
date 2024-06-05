@@ -1,0 +1,15 @@
+create table if not exists ifrsLineItems(
+group_indicator Integer not null,
+ifrs_ref varchar(255) null,
+is_approved char null,
+cat_code Integer null,
+category varchar(255) null,
+account_def varchar(255) null,
+primary_category Integer null,
+secondary_category Integer null,
+line_item_code varchar(255) null,
+line_item_reference Integer null,
+schedule_decsription varchar(255) null,
+status varchar(255) null,
+remarks varchar(255) null,
+constraint ifrsLineItems_pk primary key(group_indicator));
